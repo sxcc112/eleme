@@ -1,0 +1,554 @@
+.header {
+  background-color: #aca4a8;
+  color: #fff;
+}
+.header .return {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #aca4a8;
+  z-index: 1000;
+  height: 35px;
+}
+.header .return a {
+  color: #fff;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+}
+.header .return a span {
+  position: absolute;
+  line-height: 35px;
+  padding-left: 10px;
+  font-size: 20px;
+}
+.header .return .storename {
+  color: #fff;
+  position: absolute;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 35px;
+  display: none;
+}
+.header .top_return {
+  padding: 5px 0 0;
+  margin-top: 35px;
+}
+.header .top_return .message .store_mess .shop-header-main {
+  display: flex;
+}
+.header .top_return .message .store_mess .shop-header-main .shop-header-logo {
+  width: 80px;
+  height: 80px;
+  margin: 0 8px 5px;
+}
+.header .top_return .message .store_mess .shop-header-main .shop-header-content {
+  margin-left: 5px;
+}
+.header .top_return .message .store_mess .shop-header-main .shop-header-content .shop-header-shopName {
+  font-size: 15px;
+  font-weight: 700;
+}
+.header .top_return .message .store_mess .shop-header-main .shop-header-content .shop-header-delivery {
+  font-size: 10px;
+  margin-top: 5px;
+}
+.header .top_return .message .store_mess .shop-header-main .shop-header-content .shop-header-notice {
+  font-size: 8px;
+  margin-top: 5px;
+}
+.header .top_return .message .store_mess .shop-header-main .right_arr {
+  padding-right: 10px;
+}
+.header .top_return .privilege {
+  font-size: 8px;
+  position: relative;
+  padding-left: 30px;
+}
+.header .top_return .privilege .privi_mess {
+  padding: 3px 0;
+}
+.header .top_return .privilege .xin_p {
+  display: none;
+}
+.header .top_return .privilege .decrease {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  background: url("../img/header/decrease_1@2x.png");
+  background-size: cover;
+  left: 3%;
+  vertical-align: middle;
+}
+.header .top_return .privilege .special {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  background: url("../img/header/special_1@2x.png");
+  background-size: cover;
+  left: 3%;
+  top: 60%;
+  vertical-align: middle;
+}
+.header .top_return .privilege .active {
+  position: absolute;
+  font-size: 8px;
+  top: 0;
+  right: 15px;
+}
+.header .top_return .privilege .active .bottomarr {
+  font-size: 8px;
+}
+.bottom_box {
+  position: relative;
+  z-index: 10;
+}
+.bottom_box .navbarfixed {
+  position: fixed;
+  top: 35px;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  background-color: #fff;
+  border-width: 0 0 1px;
+}
+.bottom_box .center_nav {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+.bottom_box .center_nav .nav_r span {
+  color: #f60;
+}
+.bottom_box .center_nav .cen_active {
+  color: #3190e8;
+  border-bottom: 2px solid #3190e8;
+}
+.bottom_box .goods {
+  display: flex;
+  /* margin-top: 70px; */
+  width: 100%;
+  position: absolute;
+}
+.bottom_box .goods .product_l {
+  left: 0;
+  width: 90px;
+  height: 100%;
+  z-index: 10;
+}
+.bottom_box .goods .product_l .navbar-nav {
+  margin: 0;
+}
+.bottom_box .goods .product_l ul {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  background-color: #f8f8f8;
+  width: 90px;
+}
+.bottom_box .goods .product_l ul li {
+  position: relative;
+  border-bottom: 1px solid #ededed;
+  font-size: .8em;
+  text-align: center;
+}
+.bottom_box .goods .product_l ul li a {
+  color: #666;
+  text-decoration: none;
+}
+.bottom_box .goods .product_l ul .active {
+  border-left: 2px solid #3190e8;
+  background-color: #fff;
+  border-right-color: #fff;
+  font-weight: bolder;
+}
+.bottom_box .goods .product_r {
+  position: relative;
+  flex: 1;
+  padding-bottom: 50px;
+  height: 100%;
+}
+.bottom_box .goods .product_r dl dt .category-title {
+  background-color: #f1f1f1;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 10px;
+}
+.bottom_box .goods .product_r dl dt .category-title .category-description {
+  font-size: 10px;
+  font-weight: normal;
+}
+.bottom_box .goods .product_r dl dd {
+  display: flex;
+  position: relative;
+}
+.bottom_box .goods .product_r dl dd .foodimg {
+  display: inline-block;
+  padding: 10px;
+}
+.bottom_box .goods .product_r dl dd .foodimg img {
+  width: 50px;
+  height: 50px;
+}
+.bottom_box .goods .product_r dl dd .foodinfo .foodtitle span {
+  font-size: 12px;
+  font-weight: 700;
+}
+.bottom_box .goods .product_r dl dd .foodinfo .foodsales {
+  font-size: 6px;
+}
+.bottom_box .goods .product_r dl dd .foodinfo .foodprice span:nth-child(1) {
+  color: #f60;
+}
+.bottom_box .goods .product_r dl dd .foodinfo .foodprice span:nth-child(2) {
+  font-size: 6px;
+  font-weight: normal;
+}
+.bottom_box .goods .product_r dl dd .foodinfo .cartbutton {
+  text-align: center;
+}
+.bottom_box .goods .product_r dl dd .foodinfo .cartbutton .lanjian {
+  color: #3190e8;
+  font-size: 20px;
+  display: inline-block;
+  width: 20px;
+  height: 26px;
+  position: absolute;
+  top: 61%;
+  right: 34%;
+  display: none;
+}
+.bottom_box .goods .product_r dl dd .foodinfo .cartbutton .num {
+  position: absolute;
+  top: 60%;
+  right: 23%;
+  display: none;
+}
+.bottom_box .goods .product_r dl dd .foodinfo .cartbutton .lanjia {
+  color: #3190e8;
+  position: absolute;
+  top: 61%;
+  right: 7%;
+  font-size: 20px;
+  font-weight: 400;
+}
+.bottom_box .goods .product_r dl dd .foodinfo .cartbutton .cartbutton1 .cartbutton2 .cartbutton3 {
+  position: absolute;
+  right: 15px;
+  top: 3px;
+  color: #f60;
+  font-size: 3px;
+  border: 1px solid #f60;
+  border-radius: 10px;
+}
+.footer .cartview-JFaw9 {
+  position: fixed;
+  bottom: 40px;
+  width: 100%;
+  display: none;
+  z-index: 10000;
+}
+.footer .cartview-JFaw9 .cartview-37dYf {
+  height: 30px;
+  line-height: 30px;
+  padding: 0 .333333rem;
+  border-bottom: 1px solid #ddd;
+  background-color: #eceff1;
+  color: #666;
+  line-height: 1.066667rem;
+}
+.footer .cartview-JFaw9 .cartview-37dYf .cartview-2IL0z {
+  padding-left: .133333rem;
+  border-left: 2px solid #3190e8;
+  line-height: 30px;
+  padding: 0 10px;
+  margin-left: 3px;
+}
+.footer .cartview-JFaw9 .cartview-37dYf .cartview-3ElqP {
+  float: right;
+  padding-left: .4rem;
+  background-size: .266667rem;
+  color: #666;
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 30px;
+}
+.footer .cartview-JFaw9 .cartview-37dYf .cartview-3ElqP svg {
+  width: .306667rem;
+  height: .346667rem;
+  fill: #ddd;
+}
+.footer .cartview-JFaw9 .cartview-2cVz8 {
+  height: 40px;
+  width: 100%;
+  border-top: 1px solid #eee;
+  background: #fff;
+}
+.footer .cartview-JFaw9 .cartview-2cVz8 .goodsname {
+  font-size: 1.3em;
+  line-height: 40px;
+  padding-left: 20px;
+}
+.footer .cartview-JFaw9 .cartview-2cVz8 .goodsnum {
+  display: inline-block;
+  padding-right: 10px;
+  line-height: 40px;
+}
+.footer .cartview-JFaw9 .cartview-2cVz8 .goodsnum .goodprice {
+  padding-right: 15px;
+  color: #f60;
+}
+.footer .cartview-JFaw9 .cartview-2cVz8 .goodsnum .goodminus {
+  color: #3190e8;
+}
+.footer .cartview-JFaw9 .cartview-2cVz8 .goodsnum .num1 {
+  padding: 0 10px;
+}
+.footer .cartview-JFaw9 .cartview-2cVz8 .goodsnum .goodplus {
+  color: #3190e8;
+}
+.footer .footshop {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 50px;
+  background-color: #3d3d3f;
+  height: 40px;
+  line-height: 40px;
+  opacity: .95;
+  z-index: 10000;
+}
+.footer .footshop .footbtn {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 0;
+  left: 0;
+  background: transparent;
+  z-index: 11111;
+}
+.footer .footshop .cartview:before {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 10px;
+  right: 0;
+  bottom: 0;
+  left: 11px;
+  background-size: cover;
+  content: "";
+}
+.footer .footshop .ctv2:before {
+  background-image: url(../img/bg2.svg);
+}
+.footer .footshop .cartview {
+  position: absolute;
+  left: .32rem;
+  bottom: 3px;
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+  border-radius: 100%;
+  background-color: #3190e8;
+  border: .12rem solid #444;
+  box-shadow: 0 -0.08rem 0.053333rem 0 rgba(0, 0, 0, 0.1);
+  will-change: transform;
+  background-image: -webkit-radial-gradient(circle, #363636 0.626667rem, #444 0);
+  background-image: radial-gradient(circle, #363636 0.626667rem, #444 0);
+}
+.footer .footshop .cartview .cartview_mon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0 10px;
+  color: #fff;
+  text-decoration: none;
+}
+.footer .footshop .goodprice {
+  color: #fff;
+  position: absolute;
+  top: 0;
+}
+.footer .footshop .goodprice .cartview-1e1 {
+  height: 9px;
+  line-height: 25px;
+  font-size: 18px;
+}
+.footer .footshop .goodprice .cartview2 {
+  font-size: 12px;
+}
+.footer .footshop .cartview_mon {
+  color: #fff;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0 10px;
+  background-color: #4cd964;
+}
+.cartbg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: .4;
+  -webkit-transition: opacity .35s ease;
+  transition: opacity .35s ease;
+  z-index: 5000;
+  display: none;
+}
+.evaluate {
+  display: none;
+  width: 100%;
+}
+.evaluate .evaluate_top {
+  width: 100%;
+  border-top: 2px solid #f5f5f5;
+  border-bottom: 10px solid #f5f5f5;
+  overflow: hidden;
+  padding: 5%;
+  text-align: center;
+  font-size: 20px;
+}
+.evaluate .evaluate_top .eva_all {
+  border-right: 1px solid #f5f5f5;
+  padding-right: 10px;
+}
+.evaluate .evaluate_top .eva_all p {
+  font-size: 16px;
+}
+.evaluate .evaluate_top .eva_all p:first-child {
+  font-size: 30px;
+  line-height: 1;
+  font-weight: 400;
+  color: #f60;
+  display: block;
+}
+.evaluate .evaluate_top .eva_all p:last-child {
+  font-size: 10px;
+  color: grey;
+}
+.evaluate .evaluate_top .eva_detail {
+  text-align: left;
+  padding-left: 15px;
+  font-size: 14px;
+}
+.evaluate .evaluate_top .eva_detail p span {
+  color: #f60;
+}
+.evaluate .evaluate_top .eva_detail p:last-child span {
+  color: grey;
+}
+.evaluate .evaluate_bottom {
+  width: 100%;
+  padding: 5%;
+}
+.evaluate .evaluate_bottom .eva_classify {
+  padding-bottom: 5%;
+  border-bottom: 2px solid #f5f5f5;
+}
+.evaluate .evaluate_bottom .eva_classify span {
+  display: inline-block;
+  background-color: #ebf5ff;
+  border-radius: 8px;
+  padding: 4px;
+  margin-right: 8px;
+  margin-bottom: 4px;
+}
+.evaluate .evaluate_bottom .eva_classify span:nth-child(3),
+.evaluate .evaluate_bottom .eva_classify span:nth-child(5),
+.evaluate .evaluate_bottom .eva_classify span:nth-child(10) {
+  background-color: #f5f5f5;
+  color: gray;
+}
+.evaluate .evaluate_bottom .eva_classify span.bgc {
+  background-color: #3190e8;
+  color: #fff;
+}
+.evaluate .evaluate_bottom .eva_user {
+  width: 100%;
+}
+.evaluate .evaluate_bottom .eva_user .eva_user_one {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  border-bottom: 2px solid #f5f5f5;
+}
+.evaluate .evaluate_bottom .eva_user .eva_user_one .portrait {
+  width: 20%;
+}
+.evaluate .evaluate_bottom .eva_user .eva_user_one .portrait img {
+  width: 60%;
+  height: 40px;
+}
+.evaluate .evaluate_bottom .eva_user .eva_user_one .userEva {
+  width: 80%;
+  margin-top: 6px;
+}
+.evaluate .evaluate_bottom .eva_user .eva_user_one .userEva img {
+  width: 40%;
+  height: 80px;
+}
+.evaluate .evaluate_bottom .eva_user .eva_user_one .userEva .variety {
+  margin-top: 6px;
+}
+.evaluate .evaluate_bottom .eva_user .eva_user_one .userEva .variety span {
+  display: inline-block;
+  border: 1px solid gray;
+  border-radius: 8px;
+  padding: 4px;
+  margin-right: 4px;
+  font-size: 12px;
+}
+.evaluate .evaluate_bottom .eva_user .eva_user_one .userEva .fontsp {
+  font-size: 14px;
+  color: darkgrey;
+}
+.evaluate .evaluate_bottom .eva_user .eva_user_one .userEva .reply .glyphicon-triangle-top {
+  top: 10px;
+  color: #f5f5f5;
+}
+.evaluate .evaluate_bottom .eva_user .eva_user_one .userEva .reply p {
+  display: block;
+  padding: 2px;
+  background-color: #f5f5f5;
+}
+.cen_active {
+  color: #3190e8;
+  border-bottom: 2px solid #3190e8;
+}
+.selected {
+  display: block !important;
+}
+.hide {
+  display: none !important;
+}
+.star {
+  margin-top: 2px;
+  display: inline-block;
+  width: 100px;
+  height: 20px;
+  vertical-align: middle;
+  background: url("../img/star.svg");
+  background-size: 20px;
+}
+.star .star4 {
+  display: inline-block;
+  width: 78px;
+  height: 20px;
+  background: url("../img/star1.svg");
+  background-size: 20px;
+}
+.star .star45 {
+  display: inline-block;
+  width: 90px;
+  height: 20px;
+  background: url("../img/star1.svg");
+  background-size: 20px;
+}
